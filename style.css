@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: azure;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.top-section {
+  height: fit-content;
+  width: inherit;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1em;
+  border-bottom: 0.01em solid;
+  border-color: brown;
+}
+.conversion-secton {
+  height: fit-content;
+  margin: 10px auto;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-around;
+}
+section > .scale {
+  padding: 5px;
+  border-radius: 5px;
+  height: fit-content;
+  border: rgb(233, 9, 9) 2px solid;
+  min-width: min-content;
+}
+aside > .graph {
+  height: fit-content;
+  text-align: center;
+  margin: 0px auto;
+  transform: scale(1,-1);
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  border-left: 0.1em solid;
+  border-right: 0.1em solid;
+  border-bottom: 0.1em solid;
+  border-top: none;
+  border-color: brown;
+}
+.graph svg {
+  height: fit-content;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: -5px 0px 8px darkslategray;
+}
+.base {
+  /* border: yellow 2px solid; */
+  background-color: white;
+  border-right: 0.1em solid;
+  border-bottom: 0.1em solid;
+  border-left: 0.1em solid;
+  border-color: brown;
+  margin: 0px auto 10px auto;
+}
+aside > .button {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  font: 1em sans-serif;
+  background-color: crimson;
+  color: white;
+}

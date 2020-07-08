@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Temperature converter</title>
+</head>
+<body>
+  <!-- Section 1 Top-->
+  <section class="top-section">
+    <h4>Convert between Celsius and Fahrenheit temperature values</h4>
+  </section>
+
+  <!-- Section 2 Conversion -->
+  <section class="conversion-secton">
+    <aside id="celsius" class="scale">
+      <h4 class="result">Result: <span id="celsius-display"></span> &degC</h4>
+      <div class="graph">
+        <svg width="20" height="400">
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(0, 102, 255);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect id="celsius-bar" height="1" width="20" fill="url(#gradient1)" stroke-width="3" >
+            <!-- <animate id="animate-celsius-bar" attributeName="height" to="280" fill="freeze" dur="5"></animate> -->
+          </rect>
+        </svg>
+      </div>
+      <div class="base">
+        <svg id="circle" height="60" width="150">
+          <circle cx="88" cy="17" r="20" fill="rgb(0, 102, 255)" />
+        </svg>
+      </div>
+      <input type="number" id="celsius-input" placeholder="Enter celsius value">
+      <br><br>
+      <input class="button" type="submit" value="Convert" id="celsius-button">
+      <p>Convert Celsius to Fahrenheit</p>
+    </aside>
+
+    <aside id="fahrenheit"  class="scale">
+      <h4 class="result">Result: <span id="fahrenheit-display"></span> &degF</h4>
+      <div class="graph">
+        <svg width="20" height="400">
+          <rect id="fahrenheit-bar" height="1" width="20" fill="url(#gradient1)" >
+          </rect>
+        </svg>
+      </div>
+      <div class="base">
+        <svg id="circle" height="60" width="150">
+          <circle cx="87.5" cy="17" r="20" fill="rgb(0, 102, 255)" />
+        </svg>
+      </div>
+      <input type="number" id="fahrenheit-input" placeholder="Enter fahrenheit value">
+      <br><br>
+      <input class="button" type="submit" value="Convert" id="fahrenheit-button">
+      <p>Convert Fahrenheit to Celsius</p>
+    </aside>
+
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
