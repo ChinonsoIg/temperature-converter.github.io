@@ -42,21 +42,24 @@ aside > .graph {
   border-bottom: 0.1em solid;
   border-top: none;
   border-color: brown;
+  width: 150px;
 }
 .graph svg {
   height: fit-content;
-  background-color: white;
+  background-color:	#FFFF99;
   border-radius: 0 0 10px 10px;
   box-shadow: -5px 0px 8px darkslategray;
 }
-.base {
-  /* border: yellow 2px solid; */
+aside > .base {
+  /* border: yellow 2px solid;*/
   background-color: white;
   border-right: 0.1em solid;
   border-bottom: 0.1em solid;
   border-left: 0.1em solid;
-  border-color: brown;
+  /* border-color: rgb(156, 148, 148); */
   margin: 0px auto 10px auto;
+  text-align: center;
+  width: 150px;
 }
 aside > .button {
   text-align: center;
